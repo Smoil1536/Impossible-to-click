@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Impossible to click</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div>
+                    <input id="switch" type="checkbox" onchange="manageTheme()">
+                    <label for="switch""></label>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <button id="impossible-to-click" onmouseover="changeButtonPos()" onclick="clicked()">Click Me</button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

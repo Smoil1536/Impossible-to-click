@@ -1,0 +1,87 @@
+:root{
+    --color-grey: rgb(95, 95, 95);
+    --color-black: black;
+    --color-white: white;
+    --color-golden: #FFD700;
+    --color-cream: rgb(254, 248, 225);
+
+    --body-bg: var(--color-cream);
+    --button-bg: var(--color-black);
+    --button-text: var(--color-white);
+    --margin-left: 1.3rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: var(--body-bg);
+}
+.container{
+    height: 100vh;
+}
+.dark-theme{
+    --body-bg: var(--color-black);
+    --button-text: var(--color-black);
+    --button-bg: var(--color-golden);
+}
+.navbar{
+    padding: 2rem 5rem;
+}
+.navbar input[type="checkbox"]{
+    position: absolute;
+    top: -99999px;
+}
+.navbar label{
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navbar label::before,
+.navbar label::after{
+    content: "";
+    cursor: pointer;
+}
+.navbar label::before{
+    height: 1.5rem;
+    width: 3rem;
+    border-radius: 1rem;
+    padding: 3px;
+    background-color: var(--color-grey);
+}
+.navbar label::after{
+    position: absolute;
+    left: calc(var(--margin-left) - 1.1rem);
+    padding: 0.75rem;
+    border-radius: 50%;
+    background-color: var(--color-cream);
+    transition: all 0.2s ease-in-out;
+}
+#switch:checked + label::after{
+    left: calc(3rem - var(--margin-left));
+    background-color: var(--color-black);
+}
+main{
+    height: 80%;
+    position: relative;
+}
+#impossible-to-click{
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding: 0.6rem 2rem;
+    color: var(--button-text);
+    background-color: var(--button-bg);
+    transition: top, left, 0.2s linear;
+    box-shadow: 0 0.25rem 0.5rem var(--color-grey);
+}
+#impossible-to-click:active{
+    box-shadow: 0 0 0.5rem var(--color-grey);
+    transform: translateY(2px);
+}
