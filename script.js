@@ -12,11 +12,11 @@ function clicked() {
     alert("Either you are on mobile or you did some js magik in console. HMMMMMMMMMM...");
 }
 
-// function changeButtonPos(){
-//     const button = document.getElementById("impossible-to-click");
-//     const x = Math.floor((Math.random() * 90)) + "%";
-//     const y = Math.floor((Math.random() * 90)) + "%";
+function changeButtonPos(){
+    const button = document.getElementById("impossible-to-click");
+    const x = Math.floor((Math.random() * 90)) + "%";
+    const y = Math.floor((Math.random() * 90)) + "%";
 
-//     button.style.left = x;
-//     button.style.top = y;
-// }
+    button.style.left = x;
+    button.style.top = y;
+}
