@@ -78,7 +78,7 @@ main{
     padding: 0.6rem 2rem;
     color: var(--button-text);
     background-color: var(--button-bg);
-    transition: top, left, 0.2s linear;
+    transition: top, left, 0.06s linear;
     box-shadow: 0 0.25rem 0.5rem var(--color-grey);
 }
 #impossible-to-click:active{
