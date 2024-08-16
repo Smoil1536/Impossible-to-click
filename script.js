@@ -9,7 +9,7 @@ function manageTheme() {
 }
 
 function clicked() {
-    alert("Either you are on mobile or you did some js magik in console. HMMMMMMMMMM...");
+    alert("Either you are on mobile or you did some inspect element magik. HMMMMMMMMMM...");
 }
 
 function changeButtonPos(){
